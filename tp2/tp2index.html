@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Unidades</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Conversor de Unidades</h1>
+  </header>
+
+  <main>
+    <section class="converter">
+      <label for="unitType">Selecciona el tipo de conversión:</label>
+      <select id="unitType" onchange="populateUnits()">
+        <option value="length">Longitud</option>
+        <option value="weight">Peso</option>
+        <option value="temperature">Temperatura</option>
+      </select>
+
+      <div class="input-group">
+        <input type="number" id="inputValue" placeholder="Introduce un valor">
+        <select id="inputUnit">
+          <!-- Opciones dinámicas de unidades -->
+        </select>
+      </div>
+
+      <div class="output-group">
+        <p>Resultado:</p>
+        <span id="outputValue">0</span>
+        <select id="outputUnit">
+          <!-- Opciones dinámicas de unidades -->
+        </select>
+      </div>
+
+      <button onclick="convert()">Convertir</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado por Lionel Mayerhofer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,118 @@
+/* Estilo general */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #cb6511, #fc3e25);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #f4f4f4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección principal */
+main {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+}
+
+.converter label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.converter select,
+.converter input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #333333;
+}
+
+.converter input {
+  text-align: center;
+}
+
+.converter button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.converter button:hover {
+  background-color: #e64a19;
+}
+
+.output-group {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.output-group p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.output-group span {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #ff0000;
+}
+
+/* Pie de página */
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin: 0;
+}
+
+footer p a {
+  color: #ff3c00;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
